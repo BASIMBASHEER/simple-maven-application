@@ -1,12 +1,10 @@
-// Test class for the App
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
+package com.example;
+import org.junit.Test;
+import static org.junit.Assert.*;
 public class AppTest {
-
     @Test
-    public void testApp() {
-        assertTrue(true);
+    public void testAdd() {
+        App app = new App();
+        assertEquals(5, app.add(2, 3));
     }
 }
